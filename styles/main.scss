@@ -1,0 +1,273 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"] {
+  font-family: "entypo", sans-serif;
+  text-decoration: none;
+}
+$color:#40A2F7;
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+.cf {
+  *zoom: 1;
+} 
+
+html, body{
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+body{
+  background: $color;
+  color: #eff0f2 ; 
+  text-shadow: 1px 1px 0 $color, 2px 2px 0 rgba(black, .1);
+  font-family: "Bitter", helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+
+  p{
+    text-shadow: none;
+    line-height: 28px;
+  }
+}
+
+.center{
+  text-align: center;
+}
+.border-bottom{
+  border-bottom: 2px solid rgba(#fff, .2);
+}
+.space{
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 2em 0 !important;
+}
+
+.table{
+  text-align: center;
+  border: 1px solid #fff;
+  div{
+    box-shadow:-1px -1px 0 #eff0f2, 0px 0px 0 #eff0f2;
+  }
+  > div{
+    padding: 0em;
+    min-height: 44px;
+    line-height: 44px;    
+  }
+
+  .titles{
+    font-weight: bold;
+    > div{
+      background: #fff;
+      color: $color;
+      text-shadow: none;
+      box-shadow: none;
+    }
+  }
+}
+.hero .titles p {
+  text-align: left;
+}
+
+.hero .t-3{
+  pre{
+    width: 90%;
+  }
+}
+
+.container{
+  max-width: 920px;
+  padding: 1em;
+  margin: auto;
+}
+
+.btn{
+  padding: .5em;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  min-width: 35%;
+  float: left;
+  color: #fff;
+
+  &:nth-child(2){
+    margin-left: 10%;
+  }
+}
+.demo{
+  position: relative;
+
+  &.first{
+    div{
+      box-shadow: inset 0 0 0 .2em $color;
+    }
+  }
+  div {
+    padding: .25em;
+    min-height: 60px;
+    box-shadow: inset 0 0 0 1.2px $color;
+    background: #fff;
+    margin: 1em 0; 
+
+    div{
+      box-shadow: inset 0 0 0 1.2px #fff;
+      background: $color;
+    }
+
+
+  }
+
+
+
+  header{
+    position: absolute;
+    width: 100%;
+
+    a{
+      position: absolute;
+      width: 38px;
+      height: 38px;
+      display: block;
+      right: 1em;
+      top: -38px;
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      text-align: center;
+      line-height: 38px;
+      color: #fff;
+
+      i{
+        font-style: normal;
+      }
+
+      &:before{
+        content: 'Show code';
+        font-family: "Helvetica", sans-serif;
+        text-shadow: none;
+        line-height: 30px;
+        min-width: 80px;
+        height: 26px;
+        padding: .02em ;
+        border-radius: 3px;
+        background: rgba(black, .6);
+        position: absolute;
+        font-size: .8rem;
+        color: #fff;
+        top: -40px;
+        display: block;
+        left: -24px;
+        right: 0;
+        margin: auto;
+        opacity: 0;
+        transform:  translateY(20px);
+        transition: opacity .2s ease, transform .2s ease;
+      }
+
+      &:after{
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+
+        border-top: 7px solid rgba(black, .6);
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin: auto;
+        top: -13px;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity .2s ease, transform .2s ease;
+      }
+
+      &:hover{
+        &:before,
+        &:after{
+          opacity: 1;
+          transform: scale(1) translateY(12px);
+        }
+      }
+    }
+  }
+}
+
+.demo .grid.hover [class*="-o"]{
+  background: rgba(white, .3) !important; 
+}
+
+.demo .grid.hover [class*="t-"]{
+  background: rgba(white, .1);
+}
+
+pre{
+  background: darken($color, 19%);
+  position: relative;
+  width: 97%;
+  height: 100%;
+  max-height: 180px;
+  overflow: scroll;
+  padding: 1em;
+  margin: -.2em 0em; 
+  border-radius: 3px;
+  text-shadow: none;
+  z-index: 1; 
+
+  .class{
+    color: lighten(#F92772, 15%);
+    text-shadow: 1px 1px 0px rgba(black, .2);
+  }
+}
+.grid.shadow{
+  [class*="t"]{
+    box-shadow: inset 0 0 0 1px $color;
+  }
+}
+
+footer{
+  display: block;
+  padding: .5em 0;
+  margin-top: 12em;
+  min-height: 60px;
+  text-align: center;
+  float: left; 
+
+  small{
+    line-height: 120px;
+
+    a{
+      color: #fff;
+    }
+  }
+} 
+
+.off-screen{ 
+  display: none;
+
+  &.grid{
+    opacity: .5;
+    z-index: 0;
+  }
+}
+
+@import 'trinity.scss';
