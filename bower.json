@@ -1,0 +1,10 @@
+{
+  "name": "trinity-grid",
+  "private": true,
+  "dependencies": {
+    "bootstrap-sass-official": "~3.1.1",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.11.0"
+  },
+  "devDependencies": {}
+}

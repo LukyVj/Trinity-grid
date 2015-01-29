@@ -1,0 +1,25 @@
+{
+  "name": "trinity-grid",
+  "version": "0.0.1",
+  "homepage": "https://github.com/LukyVj/Trinity-grid",
+  "authors": [
+    "Lucas Bonomi - lucas.bonomi@gmail.com - @LukyVj"
+  ],
+  "description": "A simple & minimalistic grid for the web, because we mostly doesn't need to have up to 12 columns",
+  "keywords": [
+    "grid",
+    "css",
+    "template",
+    "grid-system",
+    "trinity"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ]
+}
