@@ -1,0 +1,363 @@
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"] {
+  font-family: "entypo", sans-serif;
+  text-decoration: none;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+.cf {
+  *zoom: 1;
+}
+.cf.border-bottom {
+  display: block;
+  width: 100%;
+  margin-top: 2em;
+  float: left;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+body {
+  background: #40A2F7;
+  color: #eff0f2;
+  text-shadow: 1px 1px 0 #40A2F7, 2px 2px 0 rgba(0, 0, 0, 0.1);
+  font-family: "Bitter", helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+}
+body p {
+  text-shadow: none;
+  line-height: 28px;
+}
+
+.center {
+  text-align: center;
+}
+
+.border-bottom {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.space {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 2em 0 !important;
+}
+
+.table {
+  text-align: center;
+  border: 1px solid #fff;
+}
+.table div {
+  box-shadow: -1px -1px 0 #eff0f2, 0px 0px 0 #eff0f2;
+}
+.table > div {
+  padding: 0em;
+  min-height: 44px;
+  line-height: 44px;
+}
+.table .titles {
+  font-weight: bold;
+}
+.table .titles > div {
+  background: #fff;
+  color: #40A2F7;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.hero .titles p {
+  text-align: left;
+}
+
+.hero .t-3 pre {
+  width: 90%;
+}
+
+.container {
+  max-width: 920px;
+  padding: 1em;
+  margin: auto;
+}
+
+.btn {
+  padding: .5em;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  min-width: 35%;
+  float: left;
+  color: #fff;
+}
+.btn:nth-child(2) {
+  margin-left: 10%;
+}
+
+.demo {
+  position: relative;
+}
+.demo.first div {
+  box-shadow: inset 0 0 0 0.2em #40A2F7;
+}
+.demo div {
+  padding: .25em;
+  min-height: 60px;
+  box-shadow: inset 0 0 0 1.2px #40A2F7;
+  background: #fff;
+  margin: 1em 0;
+}
+.demo div div {
+  box-shadow: inset 0 0 0 1.2px #fff;
+  background: #40A2F7;
+}
+.demo header {
+  position: absolute;
+  width: 100%;
+}
+.demo header a {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  display: block;
+  right: 1em;
+  top: -38px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  line-height: 38px;
+  color: #fff;
+}
+.demo header a i {
+  font-style: normal;
+}
+.demo header a:before {
+  content: 'Show code';
+  font-family: "Helvetica", sans-serif;
+  text-shadow: none;
+  line-height: 30px;
+  min-width: 80px;
+  height: 26px;
+  padding: 0.02em;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  font-size: .8rem;
+  color: #fff;
+  top: -40px;
+  display: block;
+  left: -24px;
+  right: 0;
+  margin: auto;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  transition: opacity .2s ease, -webkit-transform .2s ease;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.demo header a:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid rgba(0, 0, 0, 0.6);
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  top: -13px;
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+  transition: opacity .2s ease, -webkit-transform .2s ease;
+  transition: opacity .2s ease, transform .2s ease;
+}
+.demo header a:hover:before, .demo header a:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1) translateY(12px);
+  transform: scale(1) translateY(12px);
+}
+
+.demo .grid.hover [class*="-o"] {
+  background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.demo .grid.hover [class*="t-"] {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+pre {
+  background: #0972cd;
+  position: relative;
+  width: 97%;
+  height: 100%;
+  max-height: 180px;
+  overflow: scroll;
+  padding: 1em;
+  margin: -.2em 0em;
+  border-radius: 3px;
+  text-shadow: none;
+  z-index: 1;
+}
+pre .class {
+  color: #fb71a3;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.grid.shadow [class*="t"] {
+  box-shadow: inset 0 0 0 1px #40A2F7;
+}
+
+footer {
+  display: block;
+  padding: .5em 0;
+  margin-top: 12em;
+  min-height: 60px;
+  text-align: center;
+  float: left;
+}
+footer small {
+  line-height: 120px;
+}
+footer small a {
+  color: #fff;
+}
+
+.gallery img {
+  width: 90%;
+  margin: 2% 5%;
+}
+
+.gallery .t-3 {
+  max-height: 180px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  margin-top: 1em !important;
+}
+.gallery .t-3:hover {
+  text-decoration: underline;
+}
+.gallery .t-3:first-letter {
+  margin-left: 1em;
+}
+
+.off-screen {
+  display: none;
+}
+.off-screen.grid {
+  opacity: .5;
+  z-index: 0;
+}
+
+/* 
+    Trinity grid 
+    Because 12 columns is sometimes too much
+    ----------------------------------------
+    2015 @lukyvj   
+    */
+[class*="trinity"] [class*="t-"] {
+  display: block;
+  float: left;
+  padding: 0;
+  margin: 0;
+}
+[class*="trinity"] [class*="t-"][class*="t-1"] {
+  width: 100%;
+}
+[class*="trinity"] [class*="t-"][class*="t-2"] {
+  width: 50%;
+}
+@media all and (max-width: 420px) {
+  [class*="trinity"] [class*="t-"][class*="t-2"]:not([class*="-s"]) {
+    width: 100%;
+  }
+}
+[class*="trinity"] [class*="t-"][class*="t-3"] {
+  width: 33.33%;
+}
+@media all and (max-width: 560px) {
+  [class*="trinity"] [class*="t-"][class*="t-3"]:not([class*="-s"]) {
+    width: 100%;
+  }
+}
+[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-1"] {
+  margin-right: 66.66%;
+}
+@media all and (max-width: 560px) {
+  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-1"]:not([class*="-s"]) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-3"] {
+  margin-left: 66.66%;
+}
+@media all and (max-width: 560px) {
+  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-3"]:not([class*="-s"]) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-2"] {
+  margin-left: 33.33%;
+  margin-right: 33.33%;
+}
+@media all and (max-width: 560px) {
+  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-2"]:not([class*="-s"]) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 560px) {
+  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-2"]:not([class*="-s"]) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-2-"][class*="o-1"] {
+  margin-right: 50%;
+}
+@media all and (max-width: 420px) {
+  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-2-"][class*="o-1"]:not([class*="-s"]) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-2-"][class*="o-2"] {
+  margin-left: 50%;
+}
+@media all and (max-width: 420px) {
+  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-2-"][class*="o-2"]:not([class*="-s"]) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
