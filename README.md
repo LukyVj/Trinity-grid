@@ -3,8 +3,16 @@ Because we mostly doesn't need to have up to 12 columns
 
 ## Usage 
 
-#### 1 Download 
+#### 1 Download
+
+##### Regular
 First of all, grab the latest version of [trinity.css]()
+
+##### Using bower
+If you prefer to use [Bower](), you just have to open your command line tool, and type : 
+```bash
+  $ bower install trinity-grid
+```
 
 #### 2 Load
 Now, load the style right before your `</head>` closing tag: 
