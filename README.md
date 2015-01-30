@@ -5,7 +5,7 @@ Because we mostly doesn't need to have up to 12 columns
 In order to create a Trinity grid, you have to define the trinity frame. 
 The best way is to use the body tag, and give it a trinity class :
 ```markup 
-<body class="trinity">...
+<body class="trinity">...</body>
 ```
 
 Then you can use the grid : 
