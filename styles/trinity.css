@@ -1,9 +1,17 @@
-/* 
-    Trinity grid 
-    Because 12 columns is sometimes too much
-    ----------------------------------------
-    2015 @lukyvj   
-*/
+/*-----------------------------------------
+  Trinity grid - v1.1
+  Because 12 columns is sometimes too much
+  ----------------------------------------
+  https://github.com/LukyVj/Trinity-grid
+  ----------------------------------------
+  2015 @lukyvj   
+-----------------------------------------*/
+/*----------------------------------------
+    CONFIGURATIONS
+-----------------------------------------*/
+/*----------------------------------------
+    GRID SYSTEM
+-----------------------------------------*/
 [class*="trinity"] [class*="t-"] {
   display: block;
   float: left;
@@ -16,68 +24,66 @@
 [class*="trinity"] [class*="t-"][class*="t-2"] {
   width: 50%;
 }
-
-[class*="trinity"] [class*="t-"][class*="t-3"] {
-  width: 33.33%;
-}
-
-[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-1"] {
-  margin-right: 66.66%;
-}
-
-[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-3"] {
-  margin-left: 66.66%;
-}
-
-[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-2"] {
-  margin-left: 33.33%;
-  margin-right: 33.33%;
-}
-
-[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-2-"][class*="o-1"] {
-  margin-right: 50%;
-}
-
-[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-2-"][class*="o-2"] {
-  margin-left: 50%;
-}
-
-@media all and (max-width: 560px) {
-  [class*="trinity"] [class*="t-"][class*="t-3"]:not([class*="-s"]) {
-    width: 100%;
-  }
-
-  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-1"]:not([class*="-s"]) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-3"]:not([class*="-s"]) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-2"]:not([class*="-s"]) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-2"]:not([class*="-s"]) {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 @media all and (max-width: 420px) {
   [class*="trinity"] [class*="t-"][class*="t-2"]:not([class*="-s"]) {
     width: 100%;
   }
-
+}
+[class*="trinity"] [class*="t-"][class*="t-3"] {
+  width: 33.33%;
+}
+@media all and (max-width: 768px) {
+  [class*="trinity"] [class*="t-"][class*="t-3"]:not([class*="-s"]) {
+    width: 100%;
+  }
+}
+[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-1"] {
+  margin-right: 66.66%;
+}
+@media all and (max-width: 768px) {
+  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-1"]:not([class*="-s"]) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-3"] {
+  margin-left: 66.66%;
+}
+@media all and (max-width: 768px) {
+  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-3"]:not([class*="-s"]) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-2"] {
+  margin-left: 33.33%;
+  margin-right: 33.33%;
+}
+@media all and (max-width: 768px) {
+  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-2"]:not([class*="-s"]) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media all and (max-width: 768px) {
+  [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-3-"][class*="o-2"]:not([class*="-s"]) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-2-"][class*="o-1"] {
+  margin-right: 50%;
+}
+@media all and (max-width: 420px) {
   [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-2-"][class*="o-1"]:not([class*="-s"]) {
     margin-right: 0;
     margin-left: 0;
   }
-
+}
+[class*="trinity"] [class*="t-"][class*="-o-"][class*="t-2-"][class*="o-2"] {
+  margin-left: 50%;
+}
+@media all and (max-width: 420px) {
   [class*="trinity"] [class*="t-"][class*="-o-"][class*="t-2-"][class*="o-2"]:not([class*="-s"]) {
     margin-right: 0;
     margin-left: 0;
