@@ -1,5 +1,4 @@
 # Trinity-grid
-![License MIT](https://img.shields.io/badge/license-MIT-blue.svg) ![Version 1.1](https://img.shields.io/badge/version-1.1-brightgreen.svg)
 Because we mostly doesn't need to have up to 12 columns
 
 ## Usage 
